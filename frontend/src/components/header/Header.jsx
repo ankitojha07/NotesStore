@@ -1,22 +1,23 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Button from "../reusables/Button";
 
 const Header = () => {
   let Links = [
     { name: "HOME", link: "/" },
-    { name: "MY NOTES", link: "/" },
+    { name: "MY NOTES", link: "/mynotes" },
   ];
 
   let [open, setOpen] = useState(false);
 
   return (
-    <div className="shadow-md w-full fixed top-0 left-0">
+    <div className="shadow-md w-full top-0 left-0">
       <div className="md:flex flex items-center justify-evenly bg-white py-4">
         <div className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] text-gray-800 duration-500">
           <span className="text-3xl text-pink-600 mr-1 pt-2">
             <ion-icon name="heart"></ion-icon>
           </span>
-          <a href="/">Notezipper</a>
+          <Link to="/">Notezipper</Link>
         </div>
         <form>
           <div class="md:w-64 px-4 w-32">
@@ -43,12 +44,12 @@ const Header = () => {
         >
           {Links.map((link) => (
             <li key={link.name} className="md:ml-8 text-xl md:my-0 my-7">
-              <a
-                href={link.link}
+              <Link
+                to={link.link}
                 className="text-gray-800 hover:text-gray-400 duration-500"
               >
                 {link.name}
-              </a>
+              </Link>
             </li>
           ))}
 
