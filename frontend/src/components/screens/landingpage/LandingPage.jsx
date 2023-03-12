@@ -26,16 +26,13 @@ const LandingPage = () => {
         </span>
       </blockquote>
       <div className="flex flex-row mt-10">
-        <a href="/login">
-          <button class="bg-transparent hover:bg-pink-500 text-pink-700 font-semibold hover:text-white py-2 px-4 border border-pink-500 hover:border-transparent rounded-full">
-            Sign up
-          </button>
-        </a>
-        <a href="/signup">
-          <button class="bg-pink-500 hover:bg-pink-700 ml-10 text-white font-bold py-2 px-4 rounded-full">
-            Log in
-          </button>
-        </a>
+        <button class="bg-transparent hover:bg-pink-500 text-pink-700 font-semibold hover:text-white py-2 px-4 border border-pink-500 hover:border-transparent rounded-full">
+          Sign up
+        </button>
+
+        <button class="bg-pink-500 hover:bg-pink-700 ml-10 text-white font-bold py-2 px-4 rounded-full">
+          Log in
+        </button>
       </div>
     </div>
   );
