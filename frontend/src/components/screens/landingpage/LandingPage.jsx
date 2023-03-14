@@ -16,7 +16,7 @@ const LandingPage = () => {
       }}
     >
       <h1 className="text-center md:text-9xl text-5xl font-bold text-pink-500 bg-white p-4">
-        Welcome to NoteZipper
+        Welcome to NotesStore
       </h1>
       <blockquote class="text-2xl font-semibold italic text-center text-slate-900 mt-10">
         <span class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-pink-500 relative inline-block p-4">
