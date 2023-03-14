@@ -17,7 +17,7 @@ const Header = () => {
           <span className="text-3xl text-pink-600 mr-1 pt-2">
             <ion-icon name="heart"></ion-icon>
           </span>
-          <Link to="/">Notezipper</Link>
+          <Link to="/">NotesStore</Link>
         </div>
         <form>
           <div class="md:w-64 px-4 w-32">
